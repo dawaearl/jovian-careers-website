@@ -1,0 +1,31 @@
+
+h1{
+    text-align: center;
+    font-family: 'Poppins';
+}
+#banner{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    font-family: 'Poppins';
+}
+h3{
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Poppins';
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-weight: normal;
+    color: rgb(100, 100, 100);
+}
+.bodytext{
+    font-family: 'Roboto';
+    color: rgb(80, 80, 80);
+}
+#container{
+    max-width: 720px;
+    margin: 0 auto 0 auto;
+}
