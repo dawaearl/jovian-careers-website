@@ -26,8 +26,8 @@ h2{
 .bodytext{
     font-family: 'Roboto';
     color: rgb(80, 80, 80);
+*/
+h4{
+    color: rgb(120, 120, 120);
+    margin-bottom: 4px;
 }
-#container{
-    max-width: 720px;
-    margin: 0 auto 0 auto;
-} */

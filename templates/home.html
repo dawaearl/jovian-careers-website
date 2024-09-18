@@ -32,7 +32,11 @@
         <p class=" lead bodytext">Welcome to Jovian Careers LTD, your trusted partner in bridging the gap between talent and opportunity. Founded right here in Kenya, we are passionate about empowering individuals by connecting them with meaningful employment opportunities. Our mission is simple: to transform lives through career advancement.</p>
         
         <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-        <p class="text-center">TODO -show jobs here</p>
+        <div>
+            {% for job in jobs %}
+                {% include 'jobitems.html' %}
+            {% endfor %}
+        </div>
 
         <div class="text-center">
             <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
