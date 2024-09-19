@@ -20,18 +20,29 @@
 
 </head>
 <body>
+    {% include 'navbar.html' %}
+    <img class="img-fluid" src="/static/nairobi kenya highway.jpg" id="banner">
     <div class="container">
         <h1 class="text-center mt-2">Jovian Careers</h1>
         <figure class="text-center">
             <p class="blockquote">Building bridges, connecting You</p>
         </figure>
-            
-        <img class="img-fluid" src="/static/nairobi kenya highway.jpg" id="banner">
 
-        <h2 class="text-center mt-2 mb-4">About Jovian</h2>
-        <p class=" lead bodytext">Welcome to Jovian Careers LTD, your trusted partner in bridging the gap between talent and opportunity. Founded right here in Kenya, we are passionate about empowering individuals by connecting them with meaningful employment opportunities. Our mission is simple: to transform lives through career advancement.</p>
+        <div class="row" style="margin-bottom: 16px;">
+            <div class="col-md-5">
+                <p class=" lead bodytext" >
+                    Welcome to Jovian Careers LTD, your trusted partner in bridging the gap between talent and opportunity. Founded right here in Kenya, we are passionate about empowering individuals by connecting them with meaningful employment opportunities. Our mission is simple: to transform lives through career advancement.
+                </p>
+            </div>
+            
+            <div class="d-none d-md-block col-7">
+                <img src="/static/city overview 2.jpg" height="250px" style="border-radius: 4px;" >
+            </div>
+            
+        </div>
         
-        <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+        
+        <h2 class="text-center mt-2 mb-4" style="margin-top: 10px;">Open Positions</h2>
         <div>
             {% for job in jobs %}
                 {% include 'jobitems.html' %}
@@ -39,11 +50,11 @@
         </div>
 
         <div class="text-center">
-            <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
-            <p class="mt-4">Copytight 2024, Jovian kenya</p>
+            <a href="mailto:dawaearlke@gmail.com?subject=Question%20about%20job%20Opennings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Question%3A%20%3Center%20question%20here%3E" type="button" class="btn btn-primary btn-lg">Contact Us</a>
+            
         </div>
     </div>
-   
+    {% include'footer.html' %}
 
 </body>
 </html>
